@@ -1,11 +1,11 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(241, 246, 250);
+    background-color: rgb(151, 170, 184);
 }
 
 .calculator-container{
-    width: 450px;
+    width: 420px;
     height: 650px;
     background-color: rgb(97, 100, 104);
     margin: 100px auto;
@@ -18,12 +18,28 @@ body{
 }
 
 .display{
-    width: 90%;
-    height: 120px;
-    background-color: white;
+    width: 85%;
+    height: 140px;
+    background-color: rgb(33, 39, 8);
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 50px;
+    color: white;
+    text-align: right;
+    font-size: 50px;
+    font-weight: bold;
+    font-family:  system-ui, Arial;
+  
+    padding-right: 15px;
+    overflow: hidden;
+}
+.display-nr{
+    margin: 0;
+    margin-top: 5px;
+}
+.display-operator{
+    margin: 0;
+    margin-top: -5px;
 }
 
 .button{
@@ -34,12 +50,23 @@ body{
     font-size: 25px;
     font-weight: bold;
     font-family:  system-ui, Arial;
-    color: rgb(45, 49, 58);
-    background-color: rgb(145, 158, 168);
+    color: rgb(232, 239, 255);
+    background-color: rgb(60, 66, 70);
     margin: 7px;
+}
+
+.symbol, .operation{
+    background-color: rgb(204, 133, 0);
+}
+.symbol:hover{
+    background-color: rgb(145, 94, 0);
+}
+.empty:hover{
+    background-color: rgb(60, 66, 70);
+    cursor:default;
 }
 
 button:hover{
     cursor: pointer;
-    background-color: rgb(161, 199, 233);
+    background-color: rgb(47, 51, 54)
 }
